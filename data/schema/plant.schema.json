@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "plant.schema.json",
+  "title": "Plant",
+  "type": "object",
+  "required": ["id", "scientificName", "commonName", "zone", "bloomWindow", "waterNeeds"],
+  "properties": {
+    "id": { "type": "string" },
+    "scientificName": { "type": "string" },
+    "commonName": { "type": "string" },
+    "zone": { "type": "string", "description": "USDA hardiness zone range, e.g. '7a-9b'" },
+    "bloomWindow": {
+      "type": "object",
+      "required": ["startMonth", "endMonth"],
+      "properties": {
+        "startMonth": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "endMonth": { "type": "integer", "minimum": 1, "maximum": 12 }
+      }
+    },
+    "waterNeeds": { "type": "string", "enum": ["low", "medium", "high"] },
+    "sunNeeds": { "type": "string", "enum": ["full-sun", "part-shade", "full-shade"] },
+    "imageRefs": { "type": "array", "items": { "type": "string" } },
+    "placementGuidelines": { "type": "string" },
+    "companionPlants": { "type": "array", "items": { "type": "string" } },
+    "version": { "type": "string" },
+    "updated": { "type": "string", "format": "date" }
+  }
+}

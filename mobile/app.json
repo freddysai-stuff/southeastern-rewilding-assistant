@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Southeastern Rewilding Assistant",
+    "slug": "southeastern-rewilding-assistant",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FBF3DD"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sera.rewildingassistant"
+    },
+    "android": {
+      "package": "com.sera.rewildingassistant",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/logo.png",
+        "backgroundColor": "#FBF3DD"
+      }
+    },
+    "web": {
+      "favicon": "./assets/logo.png"
+    }
+  }
+}

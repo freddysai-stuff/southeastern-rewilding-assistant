@@ -1,0 +1,14 @@
+{
+  "id": "echinacea-purpurea",
+  "scientificName": "Echinacea purpurea",
+  "commonName": "Purple Coneflower",
+  "zone": "3a-9b",
+  "bloomWindow": { "startMonth": 6, "endMonth": 9 },
+  "waterNeeds": "medium",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Space 18-24 in. apart in well-drained soil; excellent pollinator draw.",
+  "companionPlants": ["monarda-fistulosa", "rudbeckia-hirta"],
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

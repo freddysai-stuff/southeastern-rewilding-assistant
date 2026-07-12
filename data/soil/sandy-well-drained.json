@@ -1,0 +1,11 @@
+{
+  "id": "sandy-well-drained",
+  "name": "Sandy, Well-Drained Meadow Bed",
+  "phRange": { "min": 6.0, "max": 7.0 },
+  "organicMatterTarget": 3,
+  "compaction": "low",
+  "amendments": ["leaf mold", "light compost (avoid over-fertilizing natives)"],
+  "notes": "Ideal for drought-tolerant natives like butterfly weed and big bluestem.",
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

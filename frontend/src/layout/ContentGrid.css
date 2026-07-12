@@ -1,0 +1,13 @@
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+
+@media (min-width: 900px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--space-xl);
+  }
+}

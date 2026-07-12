@@ -1,0 +1,10 @@
+{
+  "id": "kelp-tea",
+  "product": "Kelp meal tea",
+  "rate": "1/4 cup steeped per gallon of water",
+  "timing": "Every 3-4 weeks during active growth (spring-summer)",
+  "appliesTo": ["echinacea-purpurea", "monarda-fistulosa", "rudbeckia-hirta"],
+  "notes": "Gentle, low-nitrogen feed suited to native perennial beds; avoid over-fertilizing to keep growth compact.",
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

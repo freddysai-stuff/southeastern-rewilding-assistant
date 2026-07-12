@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "seasonal-rule.schema.json",
+  "title": "SeasonalRule",
+  "type": "object",
+  "required": ["id", "zone", "season", "guidance"],
+  "properties": {
+    "id": { "type": "string" },
+    "zone": { "type": "string" },
+    "season": { "type": "string", "enum": ["winter", "spring", "summer", "fall"] },
+    "guidance": { "type": "string" },
+    "relatedPlants": { "type": "array", "items": { "type": "string" } },
+    "version": { "type": "string" },
+    "updated": { "type": "string", "format": "date" }
+  }
+}

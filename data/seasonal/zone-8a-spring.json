@@ -1,0 +1,9 @@
+{
+  "id": "zone-8a-spring",
+  "zone": "8a",
+  "season": "spring",
+  "guidance": "Last frost typically mid-March. Direct-sow native wildflower seed after soil temps reach 55°F. Begin dividing and transplanting warm-season grasses.",
+  "relatedPlants": ["echinacea-purpurea", "rudbeckia-hirta", "andropogon-gerardii"],
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

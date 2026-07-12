@@ -1,0 +1,17 @@
+.sera-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+}
+
+.sera-card--interactive {
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.sera-card--interactive:hover {
+  box-shadow: var(--shadow-raised);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,20 @@
+.ai-shell__preview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.ai-shell__hint {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.ai-shell__suggestion {
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-desktop);
+  padding: var(--space-sm) var(--space-md);
+  font-size: 13px;
+  color: var(--color-deep-forest-green);
+}

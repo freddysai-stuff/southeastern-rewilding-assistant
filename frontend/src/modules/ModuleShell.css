@@ -1,0 +1,34 @@
+.module-shell {
+  padding: var(--space-lg);
+  max-width: 720px;
+}
+
+@media (min-width: 900px) {
+  .module-shell {
+    padding: var(--space-xl);
+  }
+}
+
+.module-shell__header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.module-shell__icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.module-shell__description {
+  color: var(--color-text-secondary);
+  margin: var(--space-xs) 0 0;
+}
+
+.module-shell__feature-list {
+  margin: 0;
+  padding-left: var(--space-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}

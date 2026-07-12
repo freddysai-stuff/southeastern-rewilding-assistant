@@ -1,0 +1,14 @@
+{
+  "id": "rudbeckia-hirta",
+  "scientificName": "Rudbeckia hirta",
+  "commonName": "Black-eyed Susan",
+  "zone": "3a-9b",
+  "bloomWindow": { "startMonth": 6, "endMonth": 10 },
+  "waterNeeds": "medium",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Reliable self-seeder; great filler between slower-establishing perennials.",
+  "companionPlants": ["echinacea-purpurea", "andropogon-gerardii"],
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

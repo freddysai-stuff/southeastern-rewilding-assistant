@@ -1,0 +1,29 @@
+{
+  "$comment": "Registry of all Data Docs. Regenerate/update when adding, renaming, or removing files under /data.",
+  "plants": [
+    "plants/echinacea-purpurea.json",
+    "plants/asclepias-tuberosa.json",
+    "plants/andropogon-gerardii.json",
+    "plants/monarda-fistulosa.json",
+    "plants/rudbeckia-hirta.json"
+  ],
+  "soil": [
+    "soil/compacted-clay-lawn.json",
+    "soil/sandy-well-drained.json"
+  ],
+  "fertilizer": [
+    "fertilizer/kelp-tea.json",
+    "fertilizer/compost-topdress.json"
+  ],
+  "seasonal": [
+    "seasonal/zone-8a-spring.json",
+    "seasonal/zone-8a-fall.json"
+  ],
+  "propagation": [
+    "propagation/asclepias-tuberosa.md",
+    "propagation/monarda-fistulosa.md"
+  ],
+  "glossary": [
+    "glossary/glossary.md"
+  ]
+}

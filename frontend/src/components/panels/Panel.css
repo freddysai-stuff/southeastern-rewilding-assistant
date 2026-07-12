@@ -1,0 +1,30 @@
+.sera-panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  margin-bottom: var(--space-lg);
+}
+
+.sera-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sera-panel__title {
+  font-size: 15px;
+}
+
+.sera-panel__toggle {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--color-deep-forest-green);
+}
+
+.sera-panel__body {
+  padding: var(--space-lg);
+}

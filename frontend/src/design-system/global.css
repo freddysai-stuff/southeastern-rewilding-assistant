@@ -1,0 +1,72 @@
+/**
+ * Global design tokens as CSS custom properties.
+ * Source of truth: shared/src/design-tokens.ts — keep these values in sync.
+ */
+:root {
+  /* Colors */
+  --color-primary-green: #4a7c3f;
+  --color-deep-forest-green: #2e4a2e;
+  --color-earth-brown: #8b5a2b;
+  --color-pollinator-orange: #e8871e;
+  --color-wildflower-pink: #d9739f;
+  --color-wildflower-blue: #6e7fc9;
+  --color-sky-blue: #bfe0e8;
+  --color-sun-yellow: #f4c430;
+  --color-cream: #fbf3dd;
+  --color-surface: #ffffff;
+  --color-text-primary: #2b2b24;
+  --color-text-secondary: #5c5c50;
+  --color-border: #e3d9be;
+  --color-success: #4a7c3f;
+  --color-warning: #e8871e;
+  --color-danger: #c1442c;
+
+  /* Typography */
+  --font-family: 'Nunito', 'Inter', system-ui, sans-serif;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+
+  /* Radius */
+  --radius-mobile: 8px;
+  --radius-desktop: 10px;
+  --radius-card: 12px;
+
+  /* Shadow */
+  --shadow-card: 0 2px 8px rgba(43, 43, 36, 0.12);
+  --shadow-raised: 0 4px 16px rgba(43, 43, 36, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background: var(--color-cream);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--color-deep-forest-green);
+}
+
+button {
+  font-family: inherit;
+}

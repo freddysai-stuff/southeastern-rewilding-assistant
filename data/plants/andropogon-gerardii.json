@@ -1,0 +1,14 @@
+{
+  "id": "andropogon-gerardii",
+  "scientificName": "Andropogon gerardii",
+  "commonName": "Big Bluestem",
+  "zone": "4a-9b",
+  "bloomWindow": { "startMonth": 8, "endMonth": 10 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Tall native grass (5-8 ft); use as a backdrop or corridor screen, space 24-30 in. apart.",
+  "companionPlants": ["asclepias-tuberosa", "rudbeckia-hirta"],
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}
