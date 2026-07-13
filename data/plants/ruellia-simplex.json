@@ -1,0 +1,13 @@
+{
+  "id": "ruellia-simplex",
+  "scientificName": "Ruellia simplex",
+  "commonName": "Mexican Petunia",
+  "zone": "8b-11",
+  "bloomWindow": { "startMonth": 6, "endMonth": 10 },
+  "waterNeeds": "medium",
+  "sunNeeds": "full-sun",
+  "placementGuidelines": "CAUTION - considered invasive in parts of Georgia and Florida, especially near coastal wetlands and marsh edges; not recommended for naturalized or habitat-restoration plantings under SERA's native-first approach. If grown, use physical edging barriers to control lateral spread, or contain in pots to prevent self-seeding/rhizome spread entirely, and deadhead before seed pods form. Adaptable to full sun-part shade; morning sun with afternoon shade protection often gives the most consistent bloom in intense summer heat. Drought-tolerant once established but responds well to consistent moisture; watch for root rot in heavy/poorly-drained soil - amend with coarse sand/perlite or grow in raised beds/containers. If leggy by midsummer, cut back hard to 6-8 inches; rebounds with a fresh bloom flush in 2-3 weeks.",
+  "companionPlants": ["hibiscus-rosa-sinensis"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

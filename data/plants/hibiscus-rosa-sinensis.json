@@ -1,0 +1,13 @@
+{
+  "id": "hibiscus-rosa-sinensis",
+  "scientificName": "Hibiscus rosa-sinensis",
+  "commonName": "Tropical Hibiscus",
+  "zone": "9a-11",
+  "bloomWindow": { "startMonth": 6, "endMonth": 9 },
+  "waterNeeds": "high",
+  "sunNeeds": "full-sun",
+  "placementGuidelines": "Demands a minimum of 6 hours of direct sun daily - more sun directly correlates with more blooms, while partial shade produces lush foliage but few flowers. Avoid placing under the canopy of large shade trees. In containers, check soil moisture daily during peak summer heat; may need daily watering. Mulch in-ground plants 2-3 inches (pine straw, wood chips) to retain moisture and moderate soil temperature. In coastal locations within ~1 mile of salt water, rinse foliage weekly with fresh water to prevent salt-spray leaf burn. Non-native tropical ornamental - not a native/habitat-restoration species; best suited to container or accent-bed use rather than naturalized plantings.",
+  "companionPlants": ["ruellia-simplex"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

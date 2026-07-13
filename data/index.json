@@ -5,7 +5,9 @@
     "plants/asclepias-tuberosa.json",
     "plants/andropogon-gerardii.json",
     "plants/monarda-fistulosa.json",
-    "plants/rudbeckia-hirta.json"
+    "plants/rudbeckia-hirta.json",
+    "plants/hibiscus-rosa-sinensis.json",
+    "plants/ruellia-simplex.json"
   ],
   "soil": [
     "soil/compacted-clay-lawn.json",
@@ -14,7 +16,9 @@
   "fertilizer": [
     "fertilizer/kelp-tea.json",
     "fertilizer/compost-topdress.json",
-    "fertilizer/biochar-soap-molasses-soil-detox.json"
+    "fertilizer/biochar-soap-molasses-soil-detox.json",
+    "fertilizer/fish-bone-tea-bloom-booster.json",
+    "fertilizer/kelp-tea-foliar-bloom-booster.json"
   ],
   "seasonal": [
     "seasonal/zone-8a-spring.json",
@@ -45,6 +49,8 @@
     "articles/dry-weather-irrigation-for-cover-crop-establishment.md",
     "articles/native-cover-crops-coastal-southeast-georgia.md",
     "articles/annual-alternatives-to-switchgrass.md",
-    "articles/browntop-millet-partridge-pea-unmowed-pollinator-plot.md"
+    "articles/browntop-millet-partridge-pea-unmowed-pollinator-plot.md",
+    "articles/organic-bloom-8-week-program-application-guide.md",
+    "articles/hibiscus-and-mexican-petunia-pest-and-pruning-notes.md"
   ]
 }
