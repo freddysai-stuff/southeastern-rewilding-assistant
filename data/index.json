@@ -31,7 +31,13 @@
     "fertilizer/kelp-tea-foliar-bloom-booster.json",
     "fertilizer/miracle-gro-hose-end-dilution.json",
     "fertilizer/miracle-gro-bloom-booster-10-52-10.json",
-    "fertilizer/weed-tea-fertilizer.json"
+    "fertilizer/weed-tea-fertilizer.json",
+    "fertilizer/alfalfa-tea-soil-drench.json",
+    "fertilizer/molasses-maintenance-drench.json",
+    "fertilizer/epsom-salt-foliar-spray.json",
+    "fertilizer/fish-bone-meal-tea-lawn-drench.json",
+    "fertilizer/compost-tea-aact.json",
+    "fertilizer/biochar-maintenance-broadcast.json"
   ],
   "seasonal": [
     "seasonal/zone-8a-spring.json",
@@ -65,6 +71,7 @@
     "articles/native-cover-crops-coastal-southeast-georgia.md",
     "articles/annual-alternatives-to-switchgrass.md",
     "articles/browntop-millet-partridge-pea-unmowed-pollinator-plot.md",
+    "articles/annual-organic-lawn-care-rotation-brunswick-zone-9a.md",
     "articles/organic-bloom-8-week-program-application-guide.md",
     "articles/hibiscus-and-mexican-petunia-pest-and-pruning-notes.md",
     "articles/container-soil-revival-and-mix-recipes.md",

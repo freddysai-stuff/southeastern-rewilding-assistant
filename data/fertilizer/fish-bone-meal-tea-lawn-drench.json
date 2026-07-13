@@ -1,0 +1,10 @@
+{
+  "id": "fish-bone-meal-tea-lawn-drench",
+  "product": "Fish Bone Meal Tea (whole-lawn phosphorus soil drench)",
+  "rate": "Steep 2 tablespoons fish bone meal (plus optional 1 tsp unsulfured molasses) per gallon of non-chlorinated water for 24-48 hours (do not exceed 72h - it goes anaerobic and can harm soil biology), stirring every 12 hours, then strain through cheesecloth. Apply at 1 gallon per 100 sq ft.",
+  "timing": "Soil drench only - never foliar. Apply early morning or late evening. Every 3-4 weeks during active growth. Pause during heat waves above 95F, resume below 90F. Best applied 2 hours before a moderate (0.5-1 inch) rain event.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "This is a simpler, lower-concentration lawn-scale version of the bloom-booster fish-bone-tea-bloom-booster recipe (which simmers whole fish bones and is aimed at flower/fruit set on specific ornamental shrubs like hibiscus). Both share the soil-drench-only rule and the pause-during-heat-wave logic. Part of the rotating whole-lawn organic input schedule documented in annual-organic-lawn-care-rotation-brunswick-zone-9a.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}
