@@ -59,11 +59,48 @@
 }
 
 .ai-shell__bubble {
-  white-space: pre-wrap;
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-card);
   font-size: 13px;
   line-height: 1.5;
+}
+
+.ai-shell__message--user .ai-shell__bubble {
+  white-space: pre-wrap;
+}
+
+.ai-shell__bubble p {
+  margin: 0 0 var(--space-xs);
+}
+
+.ai-shell__bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.ai-shell__bubble ul,
+.ai-shell__bubble ol {
+  margin: var(--space-xs) 0;
+  padding-left: 1.25em;
+}
+
+.ai-shell__bubble li {
+  margin-bottom: 2px;
+}
+
+.ai-shell__bubble strong {
+  color: var(--color-deep-forest-green);
+}
+
+.ai-shell__bubble em {
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.ai-shell__bubble code {
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-size: 12px;
 }
 
 .ai-shell__message--user .ai-shell__bubble {

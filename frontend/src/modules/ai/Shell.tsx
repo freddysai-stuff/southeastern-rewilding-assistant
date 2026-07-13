@@ -3,6 +3,8 @@ import { Panel } from '../../components/panels/Panel';
 import { Button } from '../../components/buttons/Button';
 import { useState, useRef, useEffect } from 'react';
 import type { FormEvent } from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import './ai.css';
 
 interface ChatSource {
@@ -98,7 +100,13 @@ export function AiShell() {
             )}
             {messages.map((m, i) => (
               <div key={i} className={`ai-shell__message ai-shell__message--${m.role}`}>
-                <div className="ai-shell__bubble">{m.content}</div>
+                <div className="ai-shell__bubble">
+                  {m.role === 'assistant' ? (
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{m.content}</ReactMarkdown>
+                  ) : (
+                    m.content
+                  )}
+                </div>
                 {m.sources && m.sources.length > 0 && (
                   <div className="ai-shell__sources">
                     <span className="ai-shell__sources-label">
