@@ -1,7 +1,7 @@
 ---
 id: hibiscus-and-mexican-petunia-pest-and-pruning-notes
 title: Hibiscus & Mexican Petunia — Pest Watch and Pruning Notes for Coastal Summer Bloom
-tags: [hibiscus, mexican-petunia, pests, pruning, aphids, spider-mites, whitefly, leaf-miner, coastal-georgia]
+tags: [hibiscus, mexican-petunia, pests, pruning, aphids, spider-mites, whitefly, leaf-miner, coastal-georgia, invasive-caution]
 relatedPlants: [hibiscus-rosa-sinensis, ruellia-simplex]
 version: 1.0.0
 updated: 2026-07-13
@@ -51,12 +51,15 @@ Generally pest-resistant. Occasional leaf miners leave winding, pale trails
 through leaf tissue — damage is primarily cosmetic; remove and dispose of
 affected leaves rather than spraying.
 
-### Spreading habit caution
+### Spreading habit — manage it, use it
 
-Mexican Petunia is a vigorous spreader and is considered invasive in some
-Georgia natural areas, particularly near coastal wetlands and marsh edges.
-Use physical edging barriers to control lateral spread in garden beds, or
-grow in containers to prevent self-seeding/rhizome spread entirely.
-Deadheading before seed pods form also limits naturalization. Given SERA's
-native-habitat focus, treat this as an ornamental/contained-planting species
-rather than one for naturalized restoration areas.
+Mexican Petunia is a vigorous spreader and naturalizes in some Georgia
+coastal wetlands and marsh edges, so treat it as **manageable rather than
+avoid-entirely**: use physical edging barriers to control lateral spread in
+garden beds, or grow in containers to prevent self-seeding/rhizome spread.
+Deadheading before seed pods form also limits naturalization. In exchange
+for that management effort, it delivers real value — near-continuous purple
+bloom through the hottest months, strong pollinator/hummingbird forage, and
+a fast, drought-tolerant groundcover that fills bare sandy soil and
+outcompetes true weeds. Best suited to a contained/edged ornamental bed
+rather than a naturalized restoration planting.

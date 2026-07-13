@@ -1,7 +1,7 @@
 ---
 id: birdseed-sprouts-in-lawn
 title: Birdseed Sprouts in Lawn — Identification & Management
-tags: [lawn, weeds, identification, birdseed, cover-crop]
+tags: [lawn, weeds, identification, birdseed, cover-crop, volunteer-weed]
 relatedPlants: []
 version: 1.0.0
 updated: 2026-07-13

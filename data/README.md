@@ -69,6 +69,24 @@ retrieval surface the article for relevant queries. If a clear structured
 fact emerges (e.g. a plant's zone/water needs), also add a minimal entry to
 the matching JSON category and cross-reference it.
 
+## Content philosophy: invasives & "weeds"
+
+SERA is native-habitat-first, but the practical reality of a real yard
+includes invasive ornamentals and volunteer "weeds." The house style is
+**control + work with the positives**, not blanket avoidance:
+
+- Identify the plant/species clearly and flag control/containment needs
+  (e.g. edging barriers, deadheading before seed-set, physical removal
+  windows) rather than just saying "don't plant this."
+- Always also note any genuine benefit it's providing in place (erosion
+  control, pollinator value, organic matter, wildlife food, shading bare
+  soil) so the user can make an informed call instead of reflexively
+  ripping it out.
+- Use `tags` like `invasive-caution` or `volunteer-weed` so this content is
+  easy to find and cross-reference later.
+- Reserve outright "avoid entirely" framing for species with no redeeming
+  practical use and a serious ecological risk in the region.
+
 ## Future phases (not yet built)
 
 Embedding these docs into a vector database for AI-assisted retrieval,
