@@ -42,7 +42,9 @@
   ],
   "seasonal": [
     "seasonal/zone-8a-spring.json",
-    "seasonal/zone-8a-fall.json"
+    "seasonal/zone-8a-fall.json",
+    "seasonal/zone-9a-summer.json",
+    "seasonal/zone-9a-winter.json"
   ],
   "propagation": [
     "propagation/asclepias-tuberosa.md",

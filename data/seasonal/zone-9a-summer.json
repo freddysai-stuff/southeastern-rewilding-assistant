@@ -1,0 +1,9 @@
+{
+  "id": "zone-9a-summer",
+  "zone": "9a",
+  "season": "summer",
+  "guidance": "Brunswick, GA summers (June-August) mean daytime heat regularly above 90°F and soil temps that can exceed 110°F in full sun sand. Water deeply and infrequently, early morning only (avoid evening watering, which invites fungal disease). Expect White Dutch Clover to droop/brown and go semi-dormant during peak heat -- this is normal and it recovers within ~48 hours of rain or a deep soak, not a sign of failure. During heat waves (multiple 95°F+ days), pause fertilizing and skip mowing until temperatures ease; stressed turf and cover crops can't process nutrients or recover from cutting well under extreme heat. If running the 8-week organic bloom program (fish-bone tea + kelp tea rotation), this is its peak window (mid-June through early August) -- keep the rest days in the rotation so soil biology isn't overwhelmed. Avoid synthetic fertilizers entirely; they leach fast in sandy soil and can burn heat-stressed roots. Good window for biochar maintenance broadcast and compost topdressing to buffer heat and hold moisture. See the 'Annual Organic Lawn Care Rotation' and 'White Dutch Clover — Germination, Behavior & Soil Impact' articles for full detail.",
+  "relatedPlants": ["gaillardia-pulchella", "asclepias-tuberosa", "rudbeckia-hirta"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}
