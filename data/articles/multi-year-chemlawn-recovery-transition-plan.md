@@ -25,7 +25,11 @@ populations.
 
 - **Main lawn areas:** broadcast a millet + low-profile legume mix (e.g.
   Browntop Millet + Alyceclover), lightly raked in ~1/2" deep. Mow a low
-  border and walking paths through the interior as it grows.
+  border and walking paths through the interior as it grows. For lawns with
+  30+ years of continuous chemical treatment and especially severe
+  compaction, see `two-year-aggressive-decompaction-cover-crop-plan` for a
+  more aggressive alternative (Sorghum-Sudangrass + Daikon Radish, etc.)
+  built around freshly-made, charged biochar.
 - **Sunny flower beds:** Sunn Hemp, seeded 1/2-1" deep (see sunn-hemp vs
   buckwheat article for details), working around any spiky succulents.
 - **North-facing shade beds:** Hairy Vetch, broadcast and kept damp until
