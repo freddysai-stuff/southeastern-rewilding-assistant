@@ -87,6 +87,21 @@ includes invasive ornamentals and volunteer "weeds." The house style is
 - Reserve outright "avoid entirely" framing for species with no redeeming
   practical use and a serious ecological risk in the region.
 
+See `articles/using-weeds-as-garden-inputs-overview.md` for the general
+technique reference this policy is built on (chop-and-drop mulching, weed
+tea fertilizer, reading weeds as soil indicators, and the "golden rule" for
+reconciling deliberately-kept pollinator patches with keeping other areas
+clean). `articles/birdseed-sprouts-in-lawn.md`, `dog-fennel-native-
+volunteer-control-and-vase-use.md`, `spanish-needles-pollinator-weed-
+containment.md`, and `bahia-grass-embracing-a-low-input-lawn-and-pasture.md`
+are worked examples of the framing applied to specific species.
+
+If a species/identity in a source transcript is not clearly confirmed
+(e.g. the user expresses doubt or a photo ID is still pending), tag the doc
+`unconfirmed-id` and say so explicitly in the body rather than presenting a
+guess as settled fact — see `articles/unconfirmed-clinging-white-flowered-
+monarch-vine.md` for the pattern.
+
 ## Future phases (not yet built)
 
 Embedding these docs into a vector database for AI-assisted retrieval,

@@ -30,7 +30,8 @@
     "fertilizer/fish-bone-tea-bloom-booster.json",
     "fertilizer/kelp-tea-foliar-bloom-booster.json",
     "fertilizer/miracle-gro-hose-end-dilution.json",
-    "fertilizer/miracle-gro-bloom-booster-10-52-10.json"
+    "fertilizer/miracle-gro-bloom-booster-10-52-10.json",
+    "fertilizer/weed-tea-fertilizer.json"
   ],
   "seasonal": [
     "seasonal/zone-8a-spring.json",
@@ -76,6 +77,8 @@
     "articles/rose-campion-self-seeding-cottage-garden-volunteer.md",
     "articles/bahia-grass-embracing-a-low-input-lawn-and-pasture.md",
     "articles/container-pollinator-feeding-schedule-by-plant-group.md",
-    "articles/cut-flower-vase-life-extension-recipe.md"
+    "articles/cut-flower-vase-life-extension-recipe.md",
+    "articles/using-weeds-as-garden-inputs-overview.md",
+    "articles/unconfirmed-clinging-white-flowered-monarch-vine.md"
   ]
 }
