@@ -145,6 +145,41 @@
   cursor: pointer;
 }
 
+.ai-shell__ingest {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.ai-shell__ingest-button {
+  font-size: 11px;
+  padding: 3px var(--space-sm);
+  border-radius: var(--radius-mobile);
+  border: 1px solid var(--color-primary-green);
+  background: #fff;
+  color: var(--color-primary-green);
+  cursor: pointer;
+}
+
+.ai-shell__ingest-button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.ai-shell__ingest-note {
+  font-size: 11px;
+  color: var(--color-text-secondary);
+}
+
+.ai-shell__ingest-note--error {
+  color: var(--color-danger);
+}
+
+.ai-shell__ingest-note--saved {
+  color: var(--color-primary-green);
+}
+
 .ai-shell__error {
   color: var(--color-danger);
   font-size: 12px;

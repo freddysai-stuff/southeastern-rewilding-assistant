@@ -17,6 +17,7 @@ interface ChatSource {
 interface WebSource {
   title: string;
   url: string;
+  snippet: string;
 }
 
 interface ChatMessage {
@@ -33,11 +34,15 @@ const SUGGESTIONS = [
   'How often should I feed my perennial bed?',
 ];
 
+type IngestStatus = 'idle' | 'saving' | 'saved' | 'error';
+
 export function AiShell() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [ingestStatus, setIngestStatus] = useState<Record<number, IngestStatus>>({});
+  const [ingestMessage, setIngestMessage] = useState<Record<number, string>>({});
   const listRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -87,11 +92,44 @@ export function AiShell() {
     void sendMessage(input);
   }
 
+  async function updateDataFromWeb(messageIndex: number) {
+    const assistantMessage = messages[messageIndex];
+    const webSources = assistantMessage.webSources;
+    if (!webSources || webSources.length === 0) return;
+
+    // The question that prompted this reply is the nearest preceding user message.
+    const query = [...messages.slice(0, messageIndex)].reverse().find((m) => m.role === 'user')?.content ?? '';
+
+    setIngestStatus((prev) => ({ ...prev, [messageIndex]: 'saving' }));
+    setIngestMessage((prev) => ({ ...prev, [messageIndex]: '' }));
+
+    try {
+      const response = await fetch('/api/chat/ingest-web', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query, webSources }),
+      });
+      const data = (await response.json()) as {
+        success: boolean;
+        error?: string;
+        doc?: { id: string; title: string; category: string };
+      };
+      if (!response.ok || !data.success) {
+        throw new Error(data.error ?? `Request failed (${response.status})`);
+      }
+      setIngestStatus((prev) => ({ ...prev, [messageIndex]: 'saved' }));
+      setIngestMessage((prev) => ({ ...prev, [messageIndex]: `Saved as "${data.doc?.title}" (${data.doc?.category})` }));
+    } catch (err) {
+      setIngestStatus((prev) => ({ ...prev, [messageIndex]: 'error' }));
+      setIngestMessage((prev) => ({ ...prev, [messageIndex]: err instanceof Error ? err.message : 'Failed to save' }));
+    }
+  }
+
   return (
     <ModuleShell
       icon="💬"
       title="AI Chat Assistant"
-      description="Grounded in the Data Docs under /data — add a free OpenRouter/Groq/Ollama key (or paid OpenAI/Anthropic) to backend/.env for fully generative answers, plus a free Tavily key for live web search when the Data Docs don't cover something."
+      description="Grounded in the Data Docs under /data — add a free OpenRouter/Groq/Ollama key (or paid OpenAI/Anthropic) to backend/.env for fully generative answers, plus a free Tavily key for live web search when the Data Docs don't cover something. When a reply includes web results, hit 'Update Data' to save a distilled, web-sourced Data Doc for future answers."
       plannedFeatures={[
         'Project-scoped conversation with context injection',
         'Suggested quick actions & deep links to tasks',
@@ -147,6 +185,27 @@ export function AiShell() {
                         {w.title}
                       </a>
                     ))}
+                  </div>
+                )}
+                {m.webSources && m.webSources.length > 0 && (
+                  <div className="ai-shell__ingest">
+                    <button
+                      type="button"
+                      className="ai-shell__ingest-button"
+                      disabled={ingestStatus[i] === 'saving' || ingestStatus[i] === 'saved'}
+                      onClick={() => void updateDataFromWeb(i)}
+                    >
+                      {ingestStatus[i] === 'saving'
+                        ? 'Saving…'
+                        : ingestStatus[i] === 'saved'
+                          ? '✓ Added to Data Docs'
+                          : 'Update Data (save web findings)'}
+                    </button>
+                    {ingestMessage[i] && (
+                      <span className={`ai-shell__ingest-note ai-shell__ingest-note--${ingestStatus[i]}`}>
+                        {ingestMessage[i]}
+                      </span>
+                    )}
                   </div>
                 )}
               </div>

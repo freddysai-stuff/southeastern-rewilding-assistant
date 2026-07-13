@@ -105,6 +105,14 @@ grounded in the Data Docs instead of invented:
    spend a search. Web results are clearly labeled as general web info (not
    project-curated), cited separately as `[W1]`, `[W2]`, ..., and returned as
    a `webSources` list of real, clickable links.
+5. **"Update Data" button** — any reply that used live web search shows an
+   "Update Data" button. Clicking it (`POST /api/chat/ingest-web`) drafts a
+   new `articles/*.md` Data Doc from those web results via the LLM, writes
+   it to `/data`, and hot-reloads retrieval — so the finding becomes a
+   permanent, searchable part of the knowledge base immediately, no server
+   restart needed. Ingested docs are clearly tagged `source: web` with a
+   `sourceUrls` list and a "Web-sourced note" disclaimer in the body, since
+   they're added live rather than going through manual review first.
 
 To upgrade to generative answers without a paid key, OpenRouter or Groq are
 the easiest free options:

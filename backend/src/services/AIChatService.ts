@@ -12,6 +12,8 @@ export interface ChatSource {
 export interface WebSource {
   title: string;
   url: string;
+  /** Raw snippet Tavily returned — kept so "Update Data" can draft a doc without re-searching. */
+  snippet: string;
 }
 
 export interface ChatResponse {
@@ -114,7 +116,7 @@ function shouldSearchWeb(message: string, localResults: RetrievalResult[]): bool
 }
 
 function toWebSources(webResults: WebSearchResult[]): WebSource[] {
-  return webResults.map((w) => ({ title: w.title, url: w.url }));
+  return webResults.map((w) => ({ title: w.title, url: w.url, snippet: w.snippet }));
 }
 
 function buildWebContextBlock(webResults: WebSearchResult[]): string {
