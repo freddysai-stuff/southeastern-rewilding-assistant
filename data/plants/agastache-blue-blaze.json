@@ -1,0 +1,14 @@
+{
+  "id": "agastache-blue-blaze",
+  "scientificName": "Agastache 'Blue Blaze'",
+  "commonName": "Blue Blaze Anise Hyssop",
+  "zone": "5a-9b",
+  "bloomWindow": { "startMonth": 6, "endMonth": 9 },
+  "waterNeeds": "medium",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "A hummingbird-favorite Agastache cultivar, frequently mixed up at nurseries with the unrelated groundcover Evolvulus glomeratus (Blue Daze) - if the plant is upright and clump-forming rather than a trailing mound, it is this Agastache. In containers, it grows by sending new stems up from the root crown, forming a tight cluster that can be sliced into 2-3 rooted 'plugs' with a sharp knife the following spring. Moderate feeder for a mid-summer phosphorus boost, but can get tall and top-heavy if overfed - every 3-4 weeks is plenty. In a fabric-bag soil mix, use the balanced recipe (soil plus equal parts peat moss and perlite) rather than the tropical or desert-native extremes.",
+  "companionPlants": ["monarda-fistulosa"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

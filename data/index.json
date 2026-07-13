@@ -7,7 +7,17 @@
     "plants/monarda-fistulosa.json",
     "plants/rudbeckia-hirta.json",
     "plants/hibiscus-rosa-sinensis.json",
-    "plants/ruellia-simplex.json"
+    "plants/ruellia-simplex.json",
+    "plants/justicia-brandegeeana.json",
+    "plants/evolvulus-glomeratus.json",
+    "plants/cuphea-hyssopifolia.json",
+    "plants/gaillardia-pulchella.json",
+    "plants/agastache-blue-blaze.json",
+    "plants/rosa-hybrid-tea-pink.json",
+    "plants/eupatorium-capillifolium.json",
+    "plants/bidens-alba.json",
+    "plants/silene-coronaria.json",
+    "plants/paspalum-notatum.json"
   ],
   "soil": [
     "soil/compacted-clay-lawn.json",
@@ -18,7 +28,9 @@
     "fertilizer/compost-topdress.json",
     "fertilizer/biochar-soap-molasses-soil-detox.json",
     "fertilizer/fish-bone-tea-bloom-booster.json",
-    "fertilizer/kelp-tea-foliar-bloom-booster.json"
+    "fertilizer/kelp-tea-foliar-bloom-booster.json",
+    "fertilizer/miracle-gro-hose-end-dilution.json",
+    "fertilizer/miracle-gro-bloom-booster-10-52-10.json"
   ],
   "seasonal": [
     "seasonal/zone-8a-spring.json",
@@ -26,7 +38,9 @@
   ],
   "propagation": [
     "propagation/asclepias-tuberosa.md",
-    "propagation/monarda-fistulosa.md"
+    "propagation/monarda-fistulosa.md",
+    "propagation/justicia-brandegeeana.md",
+    "propagation/evolvulus-glomeratus.md"
   ],
   "glossary": [
     "glossary/glossary.md"
@@ -51,6 +65,17 @@
     "articles/annual-alternatives-to-switchgrass.md",
     "articles/browntop-millet-partridge-pea-unmowed-pollinator-plot.md",
     "articles/organic-bloom-8-week-program-application-guide.md",
-    "articles/hibiscus-and-mexican-petunia-pest-and-pruning-notes.md"
+    "articles/hibiscus-and-mexican-petunia-pest-and-pruning-notes.md",
+    "articles/container-soil-revival-and-mix-recipes.md",
+    "articles/container-choices-for-budget-gardening.md",
+    "articles/transplanting-nursery-plants-in-summer-heat.md",
+    "articles/seed-collection-and-pulling-plugs-for-perennials.md",
+    "articles/pink-tea-rose-fertilizing-and-five-leaf-pruning-trick.md",
+    "articles/dog-fennel-native-volunteer-control-and-vase-use.md",
+    "articles/spanish-needles-pollinator-weed-containment.md",
+    "articles/rose-campion-self-seeding-cottage-garden-volunteer.md",
+    "articles/bahia-grass-embracing-a-low-input-lawn-and-pasture.md",
+    "articles/container-pollinator-feeding-schedule-by-plant-group.md",
+    "articles/cut-flower-vase-life-extension-recipe.md"
   ]
 }

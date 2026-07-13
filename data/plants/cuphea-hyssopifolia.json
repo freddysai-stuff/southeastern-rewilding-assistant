@@ -1,0 +1,14 @@
+{
+  "id": "cuphea-hyssopifolia",
+  "scientificName": "Cuphea hyssopifolia",
+  "commonName": "Mexican Heather (Cigar Plant type)",
+  "zone": "8b-11",
+  "bloomWindow": { "startMonth": 4, "endMonth": 11 },
+  "waterNeeds": "high",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Non-stop tropical bloomer that is a genuinely thirsty heavy feeder - unlike most of the pollinator lineup in this guide, it wants its container root-bound and consistently damp rather than dry between waterings. Best in a snug 1-2 gal. plastic pot (plastic's moisture retention suits it better than terracotta or fabric grow bags, which dry out too fast for this species). A too-large pot holds stagnant water around the roots and causes rot even though the plant itself wants steady moisture - size the pot to the plant, not the other way around. Feed every 2 weeks with a phosphorus-heavy bloom booster during active growth. In a soil mix built for fabric grow bags, favor peat moss over perlite to hold moisture (skip vermiculite unless budget allows - peat alone covers most of the water-retention need). Not reliably cold-hardy outside zone 9b+; treat as a container annual or overwinter indoors.",
+  "companionPlants": ["justicia-brandegeeana"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

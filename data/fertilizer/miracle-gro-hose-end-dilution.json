@@ -1,0 +1,10 @@
+{
+  "id": "miracle-gro-hose-end-dilution",
+  "product": "Miracle-Gro Water Soluble All Purpose Plant Food (24-8-16) via hose-end sprayer",
+  "rate": "Base ratio is 1 tbsp granules per 1 gallon of water. For a hose-end sprayer, you must build a super-concentrate in the sprayer jar first so the internal siphon meters correctly: mix 12 tbsp granules per 32 oz water in the jar, stir until fully dissolved, then set the sprayer dial to dispense 1 tbsp per gallon. Watering-can equivalent: 1 tbsp per 1 gallon of water, poured directly onto pre-dampened soil.",
+  "timing": "Apply every 7-14 days during the active growing season (spring-summer) for blooming flowers. Always pre-wet the soil before applying; never feed bone-dry soil, and let granules dissolve completely in the jar to avoid clogging the sprayer siphon.",
+  "appliesTo": ["hibiscus-rosa-sinensis", "ruellia-simplex"],
+  "notes": "This is the general-purpose, balanced-nitrogen formula (good for foliage/overall growth) - use the separate miracle-gro-bloom-booster-10-52-10 recipe instead when the goal is forcing flower production over leaf growth. Dial settings vary by hose-end sprayer model (e.g., Ortho Dial-N-Spray); check the specific product's rate chart if using a different brand/model.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

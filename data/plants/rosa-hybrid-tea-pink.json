@@ -1,0 +1,14 @@
+{
+  "id": "rosa-hybrid-tea-pink",
+  "scientificName": "Rosa (Hybrid Tea Group)",
+  "commonName": "Pink Hybrid Tea Rose",
+  "zone": "5a-9b",
+  "bloomWindow": { "startMonth": 4, "endMonth": 10 },
+  "waterNeeds": "medium",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Heavy-feeding repeat bloomer that does best with morning sun (dries dew off leaves fast, reducing fungal disease like black spot) and afternoon shade tolerance. Use the 'five-leaf-leaflet' deadheading trick to force new blooms without a painful full structural prune: follow a faded bloom's stem down to the first cluster with 5 leaflets (not 3) and snip 1/4 in. above it - the plant will not push flowers from a 3-leaf node. Cheap leather welding gloves (rather than pricier gardening gloves) give full forearm thorn protection for low-effort maintenance pruning. In-ground roses can take a stronger phosphorus-heavy bloom-booster dose than potted plants (e.g., 2 tbsp per 2 gal. water poured around the drip line) once every 4 weeks through summer; always water plain first and keep the liquid off leaves/petals to avoid scorch and fungal issues. Pairs well underplanted with volunteer Mexican Petunia and self-seeding Rose Campion for a low-cost cottage-garden bed.",
+  "companionPlants": ["ruellia-simplex", "silene-coronaria"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

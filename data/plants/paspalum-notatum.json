@@ -1,0 +1,14 @@
+{
+  "id": "paspalum-notatum",
+  "scientificName": "Paspalum notatum",
+  "commonName": "Bahia Grass",
+  "zone": "7a-10b",
+  "bloomWindow": { "startMonth": 4, "endMonth": 10 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "VOLUNTEER-WEED, EMBRACE-DON'T-FIGHT: one of the most drought-tolerant, disease-resistant, low-input warm-season turf grasses available, but its distinctive Y-shaped black seed heads can shoot up an inch a day in summer, making a freshly mowed lawn look 'weedy' again within 48 hours. Rather than fighting the biology, work with it: those rapid seed heads are effectively free, continuous overseeding that thickens thin turf over a couple of seasons and helps crowd out harsher weeds. Raising the mower deck to 3-4 in. encourages deeper roots and helps new seed stalks blend in visually; a Plant Growth Regulator (e.g., trinexapac-ethyl) can cut seed-head/mowing frequency roughly in half if a tidier look is wanted without giving up the grass's toughness. For an intentional low-maintenance pasture/meadow look, mow only every 2-3 weeks at the highest deck setting and consider overseeding with White or Crimson Clover in fall - clover fixes nitrogen into the Bahia's roots for free and adds a pollinator-friendly bloom layer over winter. If grazing small livestock, keep growth managed to 2-6 in. for better forage digestibility; unmanaged, fully mature stockpiled growth builds a dense, weed-choking sod but is lower quality forage.",
+  "companionPlants": [],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}
