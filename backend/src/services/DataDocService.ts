@@ -14,6 +14,7 @@ interface DataDocIndex {
   seasonal: string[];
   propagation: string[];
   glossary: string[];
+  articles: string[];
 }
 
 /** A markdown Data Doc (propagation notes, glossary) parsed into frontmatter + body. */
@@ -53,6 +54,7 @@ class DataDocService {
     seasonal: unknown[];
     propagation: MarkdownDoc[];
     glossary: MarkdownDoc[];
+    articles: MarkdownDoc[];
   };
 
   constructor() {
@@ -68,6 +70,7 @@ class DataDocService {
       seasonal: this.index.seasonal.map((p) => readJson(p)),
       propagation: this.index.propagation.map((p) => readMarkdown(p)),
       glossary: this.index.glossary.map((p) => readMarkdown(p)),
+      articles: this.index.articles.map((p) => readMarkdown(p)),
     };
   }
 
@@ -98,6 +101,10 @@ class DataDocService {
 
   getGlossaryDocs() {
     return this.cache.glossary;
+  }
+
+  getArticles() {
+    return this.cache.articles;
   }
 
   getById<T extends { id: string }>(collection: T[], id: string): T | undefined {

@@ -7,7 +7,7 @@ import { dataDocService } from './DataDocService';
  */
 export interface ReferenceDoc {
   id: string;
-  category: 'plants' | 'soil' | 'fertilizer' | 'seasonal' | 'propagation' | 'glossary';
+  category: 'plants' | 'soil' | 'fertilizer' | 'seasonal' | 'propagation' | 'glossary' | 'articles';
   title: string;
   text: string;
   /** Original structured record, returned to the caller for rich source cards. */
@@ -70,6 +70,7 @@ const CATEGORY_WEIGHT: Record<ReferenceDoc['category'], number> = {
   seasonal: 1.1,
   propagation: 1.05,
   glossary: 0.75,
+  articles: 1.0,
 };
 
 function stem(word: string): string {
@@ -184,6 +185,29 @@ function buildCorpus(): ReferenceDoc[] {
         text: entry,
         raw: { term: termMatch?.[1], definition: entry },
       });
+    });
+  }
+
+  for (const article of dataDocService.getArticles()) {
+    // Articles are narrative/mixed-topic notes (e.g. distilled from AI chat
+    // history) with free-form frontmatter tags rather than strict schema
+    // fields — index title + tags + related plants + full body text.
+    const headingMatch = article.body.match(/^#\s+(.+)$/m);
+    const tags = Array.isArray(article.frontmatter.tags) ? (article.frontmatter.tags as string[]) : [];
+    const relatedPlants = Array.isArray(article.frontmatter.relatedPlants)
+      ? (article.frontmatter.relatedPlants as string[])
+      : [];
+    docs.push({
+      id: article.id,
+      category: 'articles',
+      title: (article.frontmatter.title as string) ?? headingMatch?.[1] ?? article.id,
+      text: safeJoin(
+        article.frontmatter.title as string,
+        tags.length > 0 && tags.join(' '),
+        relatedPlants.length > 0 && relatedPlants.join(' '),
+        article.body,
+      ),
+      raw: article,
     });
   }
 

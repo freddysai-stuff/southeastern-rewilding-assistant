@@ -15,6 +15,8 @@ retrieval system.
   seasonal/      Zone-based seasonal guidance rules (JSON, validated against schema/seasonal-rule.schema.json)
   propagation/   Long-form propagation guides (Markdown with frontmatter)
   glossary/      Long-form glossary/reference content (Markdown)
+  articles/      Distilled notes from research/chat sources (Markdown with frontmatter: id, title, tags, relatedPlants)
+  _drafts/       Scratch area for AI-drafted docs pending human review (not loaded by the backend)
   schema/        JSON Schema definitions used for validation
   index.json     Registry listing every doc file, grouped by category
 ```
@@ -40,7 +42,32 @@ Delete the file and remove its entry from `index.json`, then re-validate.
 - **JSON** — structured data that benefits from schema validation (plants,
   soil, fertilizer, seasonal rules).
 - **Markdown** (with YAML frontmatter) — long-form guides (propagation
-  steps, glossary entries) where prose matters more than strict structure.
+  steps, glossary entries, articles) where prose matters more than strict
+  structure.
+
+## Articles (distilled research/chat notes)
+
+`articles/*.md` is for narrative content — e.g. content distilled from AI
+chat history, research notes, or anything that doesn't cleanly fit the
+strict plant/soil/fertilizer/seasonal schemas. Frontmatter convention:
+
+```
+---
+id: white-dutch-clover-behavior
+title: White Dutch Clover — Germination, Behavior & Soil Impact
+tags: [clover, zone-9a, soil-building, ground-cover]
+relatedPlants: [white-dutch-clover]
+version: 1.0.0
+updated: 2026-07-13
+---
+# White Dutch Clover — Germination, Behavior & Soil Impact
+... body content, headings preserved ...
+```
+
+Only `id`/`title` are required by convention; `tags` and `relatedPlants` help
+retrieval surface the article for relevant queries. If a clear structured
+fact emerges (e.g. a plant's zone/water needs), also add a minimal entry to
+the matching JSON category and cross-reference it.
 
 ## Future phases (not yet built)
 
