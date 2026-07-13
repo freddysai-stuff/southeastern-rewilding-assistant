@@ -96,6 +96,15 @@ grounded in the Data Docs instead of invented:
      endpoint.
 3. Every reply returns a `sources` list (doc id, category, title, relevance
    score) so you can see exactly which Data Docs backed the answer.
+4. Optional **live web search** — if you set `TAVILY_API_KEY` in
+   `backend/.env`, the assistant can search the live web (via
+   [Tavily](https://app.tavily.com), free tier: 1,000 searches/month, no
+   card) to fill gaps the Data Docs don't cover. It only fires when local
+   retrieval looks weak or the question is clearly web-shaped (e.g. "look up
+   the current price of..."), so normal Data-Doc-grounded questions never
+   spend a search. Web results are clearly labeled as general web info (not
+   project-curated), cited separately as `[W1]`, `[W2]`, ..., and returned as
+   a `webSources` list of real, clickable links.
 
 To upgrade to generative answers without a paid key, OpenRouter or Groq are
 the easiest free options:
@@ -104,13 +113,16 @@ the easiest free options:
 cp backend/.env.example backend/.env
 # then edit backend/.env — uncomment OPENROUTER_API_KEY (or GROQ_API_KEY)
 # and paste your key from openrouter.ai/keys or console.groq.com/keys
+# optionally also uncomment TAVILY_API_KEY for live web search
 npm run dev:backend
 ```
 
 Because retrieval only reasons over what's in `/data`, adding more/better
 Data Docs (more plants, soil types, propagation notes, glossary terms) is
-the single biggest lever for making the assistant "smarter" — it doesn't
-require any code changes.
+still the biggest lever for making the assistant "smarter" for anything
+project-specific — live web search is a complement for general knowledge the
+curated Data Docs will never fully cover (current prices, breaking news,
+niche one-off questions), not a replacement for it.
 
 ## Roadmap
 

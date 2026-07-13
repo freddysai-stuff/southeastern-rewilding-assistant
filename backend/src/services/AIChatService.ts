@@ -1,5 +1,6 @@
 import { retrievalService, type RetrievalResult } from './RetrievalService';
 import { generateChatCompletion, getConfiguredProvider, type ChatMessage } from './llm/client';
+import { webSearch, isWebSearchConfigured, type WebSearchResult } from './search/WebSearchService';
 
 export interface ChatSource {
   id: string;
@@ -8,18 +9,28 @@ export interface ChatSource {
   score: number;
 }
 
+export interface WebSource {
+  title: string;
+  url: string;
+}
+
 export interface ChatResponse {
   reply: string;
   sources: ChatSource[];
+  /** Live web results (only present when TAVILY_API_KEY is set and a search actually ran). */
+  webSources: WebSource[];
   /** 'generative' when an LLM produced the reply, 'extractive' for the free, offline fallback. */
   mode: 'generative' | 'extractive';
 }
 
 const SYSTEM_PROMPT = `You are the SERA Assistant, a helpful guide for native Southeastern US habitat
-restoration ("rewilding"). Answer the user's question using ONLY the reference
-material provided below. If the reference material doesn't cover the
-question, say so honestly instead of guessing. Keep answers concise and
-practical, and mention which reference docs you drew from.`;
+restoration ("rewilding"). Answer the user's question primarily using the
+curated reference material provided below, citing docs as [1], [2], etc. If
+"External web results" are also provided, you may use them to fill gaps the
+Data Docs don't cover — cite those as [W1], [W2], etc., and make clear they
+are general web info, not project-curated guidance. If neither source covers
+the question, say so honestly instead of guessing. Keep answers concise and
+practical.`;
 
 /** The project is anchored to one real location, so we can always tell the LLM "where/when" it is. */
 const PROJECT_LOCATION = 'Brunswick, GA (USDA Hardiness Zone 9a, coastal sandy soil)';
@@ -72,6 +83,51 @@ function buildContextBlock(results: RetrievalResult[]): string {
   return results
     .map((r, i) => `[${i + 1}] (${r.doc.category}) ${r.doc.title}\n${r.doc.text}`)
     .join('\n\n');
+}
+
+/**
+ * Explicit signals that the user wants something the curated Data Docs are
+ * unlikely to have: current prices, news, "look this up for me", etc.
+ */
+const WEB_SEARCH_TRIGGER_PATTERN =
+  /\b(search the web|look (this |it )?up|google (it|this)|latest|news|current price|where (can|do) i (buy|find)|buy online|nursery near|find a source|website for)\b/i;
+
+/**
+ * A local match this weak means the Data Docs probably don't cover the
+ * question at all. Calibrated empirically: even fully unrelated queries
+ * (e.g. "my cat keeps knocking things off the counter") score ~0.04-0.07
+ * against this corpus from incidental word overlap, while genuinely
+ * on-topic queries score 0.2+. 0.1 sits cleanly above that noise floor.
+ */
+const WEAK_LOCAL_MATCH_SCORE = 0.1;
+
+/**
+ * Decides whether to spend a Tavily search on this turn. Only fires when a
+ * key is configured, and only when the local Data Docs look thin for this
+ * question (no results, a weak top score) or the user explicitly asked for
+ * something web-shaped — so a well-covered question never burns quota.
+ */
+function shouldSearchWeb(message: string, localResults: RetrievalResult[]): boolean {
+  if (!isWebSearchConfigured()) return false;
+  const weakLocalMatch = localResults.length === 0 || localResults[0].score < WEAK_LOCAL_MATCH_SCORE;
+  return weakLocalMatch || WEB_SEARCH_TRIGGER_PATTERN.test(message);
+}
+
+function toWebSources(webResults: WebSearchResult[]): WebSource[] {
+  return webResults.map((w) => ({ title: w.title, url: w.url }));
+}
+
+function buildWebContextBlock(webResults: WebSearchResult[]): string {
+  if (webResults.length === 0) return '';
+  const entries = webResults.map((w, i) => `[W${i + 1}] ${w.title} (${w.url})\n${w.snippet}`).join('\n\n');
+  return `\n\nExternal web results (general web info, not project-curated — cite as [W1], [W2], ...):\n${entries}`;
+}
+
+/** Appends a real, clickable "From the web" link list so the reader never has to trust the LLM to reproduce a URL correctly. */
+function appendWebLinks(reply: string, webResults: WebSearchResult[]): string {
+  if (webResults.length === 0) return reply;
+  const links = webResults.map((w, i) => `${i + 1}. [${w.title}](${w.url})`).join('\n');
+  return `${reply}\n\n**From the web:**\n${links}`;
 }
 
 /** Truncates markdown text at a paragraph/sentence boundary instead of mid-word or right after a bare heading. */
@@ -205,24 +261,27 @@ class AIChatService {
     const results = retrievalService.retrieve(buildRetrievalQuery(message), 6);
     const sources = toSources(results);
 
+    const webResults = shouldSearchWeb(message, results) ? await webSearch(message) : [];
+    const webSources = toWebSources(webResults);
+
     const provider = getConfiguredProvider();
     if (provider !== 'none') {
       const messages: ChatMessage[] = [
         {
           role: 'system',
-          content: `${SYSTEM_PROMPT}\n\n${buildContextHeader()}\n\nReference material:\n${buildContextBlock(results)}`,
+          content: `${SYSTEM_PROMPT}\n\n${buildContextHeader()}\n\nReference material:\n${buildContextBlock(results)}${buildWebContextBlock(webResults)}`,
         },
         ...history,
         { role: 'user', content: message },
       ];
       const generated = await generateChatCompletion(messages);
       if (generated) {
-        return { reply: generated, sources, mode: 'generative' };
+        return { reply: appendWebLinks(generated, webResults), sources, webSources, mode: 'generative' };
       }
       // Falls through to extractive mode if the LLM call failed.
     }
 
-    return { reply: buildExtractiveReply(results), sources, mode: 'extractive' };
+    return { reply: appendWebLinks(buildExtractiveReply(results), webResults), sources, webSources, mode: 'extractive' };
   }
 }
 

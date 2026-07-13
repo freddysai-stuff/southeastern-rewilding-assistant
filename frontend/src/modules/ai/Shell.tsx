@@ -14,10 +14,16 @@ interface ChatSource {
   score: number;
 }
 
+interface WebSource {
+  title: string;
+  url: string;
+}
+
 interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
   sources?: ChatSource[];
+  webSources?: WebSource[];
   mode?: 'generative' | 'extractive';
 }
 
@@ -58,8 +64,16 @@ export function AiShell() {
         }),
       });
       if (!response.ok) throw new Error(`Request failed (${response.status})`);
-      const data = (await response.json()) as { reply: string; sources: ChatSource[]; mode: 'generative' | 'extractive' };
-      setMessages((prev) => [...prev, { role: 'assistant', content: data.reply, sources: data.sources, mode: data.mode }]);
+      const data = (await response.json()) as {
+        reply: string;
+        sources: ChatSource[];
+        webSources?: WebSource[];
+        mode: 'generative' | 'extractive';
+      };
+      setMessages((prev) => [
+        ...prev,
+        { role: 'assistant', content: data.reply, sources: data.sources, webSources: data.webSources, mode: data.mode },
+      ]);
     } catch (err) {
       setError('Could not reach the SERA Assistant. Is the backend running (npm run dev:backend)?');
       console.error(err);
@@ -77,7 +91,7 @@ export function AiShell() {
     <ModuleShell
       icon="💬"
       title="AI Chat Assistant"
-      description="Grounded in the Data Docs under /data — add a free OpenRouter/Groq/Ollama key (or paid OpenAI/Anthropic) to backend/.env for fully generative answers."
+      description="Grounded in the Data Docs under /data — add a free OpenRouter/Groq/Ollama key (or paid OpenAI/Anthropic) to backend/.env for fully generative answers, plus a free Tavily key for live web search when the Data Docs don't cover something."
       plannedFeatures={[
         'Project-scoped conversation with context injection',
         'Suggested quick actions & deep links to tasks',
@@ -116,6 +130,22 @@ export function AiShell() {
                       <span key={s.id} className="ai-shell__source-chip" title={`${s.category} · relevance ${s.score}`}>
                         {s.title}
                       </span>
+                    ))}
+                  </div>
+                )}
+                {m.webSources && m.webSources.length > 0 && (
+                  <div className="ai-shell__sources">
+                    <span className="ai-shell__sources-label">From the web:</span>
+                    {m.webSources.map((w) => (
+                      <a
+                        key={w.url}
+                        href={w.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="ai-shell__source-chip ai-shell__source-chip--web"
+                      >
+                        {w.title}
+                      </a>
                     ))}
                   </div>
                 )}

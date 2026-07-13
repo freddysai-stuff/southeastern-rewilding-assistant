@@ -12,6 +12,7 @@ describe('AIChatService (no API key configured)', () => {
     delete process.env.OLLAMA_BASE_URL;
     delete process.env.AI_BASE_URL;
     delete process.env.AI_API_KEY;
+    delete process.env.TAVILY_API_KEY;
   });
 
   afterAll(() => {
@@ -30,5 +31,10 @@ describe('AIChatService (no API key configured)', () => {
     expect(response.mode).toBe('extractive');
     expect(response.sources).toEqual([]);
     expect(response.reply).toMatch(/don't have reference data/i);
+  });
+
+  it('never calls out to the web when no TAVILY_API_KEY is configured', async () => {
+    const response = await aiChatService.respond('what should I do about compacted clay soil?');
+    expect(response.webSources).toEqual([]);
   });
 });
