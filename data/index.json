@@ -13,7 +13,8 @@
   ],
   "fertilizer": [
     "fertilizer/kelp-tea.json",
-    "fertilizer/compost-topdress.json"
+    "fertilizer/compost-topdress.json",
+    "fertilizer/biochar-soap-molasses-soil-detox.json"
   ],
   "seasonal": [
     "seasonal/zone-8a-spring.json",
@@ -32,6 +33,15 @@
     "articles/shade-soil-rebuilders-north-facing-beds.md",
     "articles/brunswick-ga-zone-9a-soil-behavior.md",
     "articles/pollinator-feeding-miracle-gro.md",
-    "articles/barometer-bush-texas-sage-pruning.md"
+    "articles/barometer-bush-texas-sage-pruning.md",
+    "articles/chemlawn-recovery-soil-restoration-blueprint.md",
+    "articles/stealth-lawn-code-compliance-strategy.md",
+    "articles/summer-cover-crop-comparison-millet-cowpeas-peanut.md",
+    "articles/sunn-hemp-vs-buckwheat-flower-bed-cover-crops.md",
+    "articles/north-shade-bed-cover-crop-rotation-vetch-subclover.md",
+    "articles/winter-clover-choices-crimson-carolina-white-dutch.md",
+    "articles/fermented-rice-water-vs-molasses-soil-drench.md",
+    "articles/multi-year-chemlawn-recovery-transition-plan.md",
+    "articles/dry-weather-irrigation-for-cover-crop-establishment.md"
   ]
 }
