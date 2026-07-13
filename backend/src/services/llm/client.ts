@@ -68,11 +68,14 @@ function resolveOpenAiCompatibleConfig(provider: LlmProviderName): OpenAiCompati
         model: process.env.OPENAI_MODEL ?? 'gpt-4o-mini',
       };
     case 'openrouter':
-      // Free tier: pick any `:free`-suffixed model from https://openrouter.ai/models.
+      // Default to OpenRouter's "openrouter/free" router, which auto-picks a
+      // free model at random from whatever's currently available — more
+      // resilient than pinning one `:free`-suffixed model that could be
+      // retired. Override with any model from https://openrouter.ai/models.
       return {
         baseUrl: 'https://openrouter.ai/api/v1',
         apiKey: process.env.OPENROUTER_API_KEY,
-        model: process.env.OPENROUTER_MODEL ?? 'mistralai/mistral-7b-instruct:free',
+        model: process.env.OPENROUTER_MODEL ?? 'openrouter/free',
         extraHeaders: {
           'HTTP-Referer': 'https://github.com/freddysai-stuff/southeastern-rewilding-assistant',
           'X-Title': 'SERA Assistant',
