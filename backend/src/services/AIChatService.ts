@@ -157,7 +157,7 @@ function buildExtractiveReply(results: RetrievalResult[]): string {
 
   lines.push(
     '',
-    `_Extractive answer from the Data Docs — add an OPENAI_API_KEY or ANTHROPIC_API_KEY to backend/.env for a fully conversational reply._`,
+    `_Extractive answer from the Data Docs — add a free OpenRouter/Groq/Ollama key (or paid OPENAI_API_KEY/ANTHROPIC_API_KEY) to backend/.env for a fully conversational reply._`,
   );
   return lines.join('\n');
 }

@@ -7,6 +7,11 @@ describe('AIChatService (no API key configured)', () => {
     delete process.env.AI_PROVIDER;
     delete process.env.OPENAI_API_KEY;
     delete process.env.ANTHROPIC_API_KEY;
+    delete process.env.OPENROUTER_API_KEY;
+    delete process.env.GROQ_API_KEY;
+    delete process.env.OLLAMA_BASE_URL;
+    delete process.env.AI_BASE_URL;
+    delete process.env.AI_API_KEY;
   });
 
   afterAll(() => {

@@ -87,19 +87,23 @@ grounded in the Data Docs instead of invented:
    either:
    - **Extractive mode (default, zero cost)** — formats the top matches
      into a direct, cited answer. This is what runs out of the box.
-   - **Generative mode** — if you set `OPENAI_API_KEY` or
-     `ANTHROPIC_API_KEY` in `backend/.env` (copy from
-     `backend/.env.example`), the retrieved docs are injected into an LLM
-     prompt for a fully conversational answer, still cited to the same
-     source docs.
+   - **Generative mode** — if you configure an LLM provider in
+     `backend/.env` (copy from `backend/.env.example`), the retrieved docs
+     are injected into a prompt for a fully conversational answer, still
+     cited to the same source docs. Supported providers: OpenAI, Anthropic,
+     **OpenRouter** (free-tier `:free` models), **Groq** (free tier, fast),
+     **Ollama** (fully local, no signup/cost), or any other OpenAI-compatible
+     endpoint.
 3. Every reply returns a `sources` list (doc id, category, title, relevance
    score) so you can see exactly which Data Docs backed the answer.
 
-To upgrade to generative answers:
+To upgrade to generative answers without a paid key, OpenRouter or Groq are
+the easiest free options:
 
 ```bash
 cp backend/.env.example backend/.env
-# then edit backend/.env and set OPENAI_API_KEY or ANTHROPIC_API_KEY
+# then edit backend/.env — uncomment OPENROUTER_API_KEY (or GROQ_API_KEY)
+# and paste your key from openrouter.ai/keys or console.groq.com/keys
 npm run dev:backend
 ```
 

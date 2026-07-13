@@ -77,7 +77,7 @@ export function AiShell() {
     <ModuleShell
       icon="💬"
       title="AI Chat Assistant"
-      description="Grounded in the Data Docs under /data — add an OPENAI_API_KEY or ANTHROPIC_API_KEY to backend/.env for fully generative answers."
+      description="Grounded in the Data Docs under /data — add a free OpenRouter/Groq/Ollama key (or paid OpenAI/Anthropic) to backend/.env for fully generative answers."
       plannedFeatures={[
         'Project-scoped conversation with context injection',
         'Suggested quick actions & deep links to tasks',
