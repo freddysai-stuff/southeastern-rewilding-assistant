@@ -13,6 +13,7 @@
   "dependencies": {
     "@sera/shared": "*",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.19.2",
     "gray-matter": "^4.0.3"
   },
