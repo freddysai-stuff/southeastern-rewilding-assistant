@@ -1,0 +1,10 @@
+{
+  "id": "biochar-charging-tea-compost-worm-castings",
+  "product": "Biochar Charging Tea (compost + worm castings + molasses biological brew)",
+  "rate": "Fill a 5-gallon bucket/cart 1/3 full with finished compost plus 5-10 lb worm castings (use the full amount of castings for severely chemical-degraded soil), top off with water (rainwater or dechlorinated tap), and stir in 1 cup unsulfured molasses per 5-gallon batch. Pour the finished tea - including the solid sludge, do not strain - directly over crushed, freshly-quenched biochar until fully submerged; it should crackle audibly as it absorbs liquid.",
+  "timing": "Steep the tea 24-48 hours, stirring vigorously 3-4 times a day (or run an aquarium bubbler) to keep it aerated. Soak the submerged biochar a minimum of 3-4 days. Then work in the remaining compost solids plus 2 lb Milorganite (skip 10-10-10 synthetic fertilizer entirely for chemical-detox use cases - see notes). Cover with a tarp or plywood and cure in a warm spot for 1-2 weeks, keeping it damp like a wrung-out sponge before applying to soil.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "This is a living-biology charging recipe, distinct from the soap/molasses detox drench in biochar-soap-molasses-soil-detox (which is applied directly to soil, not used to pre-charge biochar itself). For soil that is functionally sterile from decades of chemical lawn treatment, skip Milorganite's synthetic-fertilizer companion 10-10-10 entirely during the initial charge - adding chemical salts to a mix designed to heal chemically-damaged soil will kill the beneficial microbes you just brewed. Once charged and cured, this feeds soil directly instead of temporarily robbing it of nutrients the way raw uncharged biochar does. See diy-biochar-production-tlud-weber-grill for how to make the biochar itself, and biochar-maintenance-broadcast for applying already-charged biochar on an ongoing basis.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

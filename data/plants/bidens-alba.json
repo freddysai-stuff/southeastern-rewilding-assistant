@@ -1,0 +1,14 @@
+{
+  "id": "bidens-alba",
+  "scientificName": "Bidens alba",
+  "commonName": "Spanish Needles (Beggarticks)",
+  "zone": "8a-11",
+  "bloomWindow": { "startMonth": 3, "endMonth": 11 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "VOLUNTEER-WEED, MANAGEABLE: a highly aggressive self-seeder whose spent white daisy flowers turn into sharp, two-pronged burr seeds that mat into pet fur and hitch rides across the yard - pull unwanted patches by the taproot while soil is damp (bag seed heads, do not compost) before petals drop. Rather than eradicating it property-wide, the better move is deliberate containment: keep one or two isolated patches as a dedicated pollinator sanctuary, since it is a genuinely strong nectar source for honeybees, native bees, and migrating butterflies. Use the 'hedge trimmer' routine to keep a patch contained - let it bloom and feed pollinators, then shear the top third off the moment petals start dropping (before burrs form) to prevent seed spread while forcing bushier regrowth for the next bloom flush. Can be out-competed in unwanted areas by planting a dense, fast cover crop like Sunn Hemp over it.",
+  "companionPlants": [],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

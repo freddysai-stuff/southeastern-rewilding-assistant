@@ -1,0 +1,10 @@
+{
+  "id": "kelp-tea-foliar-bloom-booster",
+  "product": "Kelp Tea (micronutrient & growth-hormone booster, bloom program strength)",
+  "rate": "Steep 1 oz dried kelp/seaweed meal in 1 gallon non-chlorinated water (optional 1 tsp apple cider vinegar) for 24-48 hours at room temperature, stirring occasionally; strain. Yields ~1 gallon tea. Dilute 1:15 (weeks 1-2) for soil drench; dilute further to 1:20 for foliar spray use.",
+  "timing": "Apply in early morning before 9 AM or late afternoon after 5 PM on a rotating weekly schedule alongside fish-bone tea, with plain-water rest days/weeks built in. Pre-water the day before application.",
+  "appliesTo": ["hibiscus-rosa-sinensis", "ruellia-simplex"],
+  "notes": "Rich in 60+ trace minerals plus natural plant growth hormones - cytokinins (stimulate cell division/bud development) and auxins (promote rooting and flowering). Works at a hormonal/micronutrient level, complementing fish-bone tea's phosphorus-driven bloom nutrition. Foliar application at 1:20 works well on Mexican Petunia (Ruellia simplex) foliage for a direct micronutrient boost; use as a soil drench only on hibiscus. Store strained tea at room temperature up to 1 week, or refrigerate up to 2 weeks. This is a higher-strength/more-diluted-schedule variant than the general-purpose kelp-tea recipe used for native perennial beds - see that doc for the lower-maintenance rate.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

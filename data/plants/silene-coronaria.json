@@ -1,0 +1,14 @@
+{
+  "id": "silene-coronaria",
+  "scientificName": "Silene coronaria",
+  "commonName": "Rose Campion",
+  "zone": "4a-8b",
+  "bloomWindow": { "startMonth": 6, "endMonth": 8 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "VOLUNTEER-WEED (benign): a classic cottage-garden self-seeder that frequently volunteers into sunny, dry beds uninvited but is not a serious ecological risk - the soft, silvery-grey fuzzy leaves (similar texture to Lamb's Ear) can be mistaken for a true weed at first glance. Its magenta-pink flowers on tall elegant stems are a favorite cut-flower companion for roses in a vase, so there is little reason to remove volunteers unless they're crowding a bed. To harvest free seed for more plants, let flower heads dry fully on the plant at the end of summer and shake the tiny black seeds directly into new beds or pots the following spring. Thrives on neglect in poor, dry soil - avoid heavy feeding or overwatering, which shortens its typically short-lived (biennial/short-lived perennial) lifespan.",
+  "companionPlants": ["rosa-hybrid-tea-pink"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

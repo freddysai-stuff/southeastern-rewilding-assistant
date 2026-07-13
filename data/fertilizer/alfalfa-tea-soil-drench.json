@@ -1,0 +1,10 @@
+{
+  "id": "alfalfa-tea-soil-drench",
+  "product": "Alfalfa Tea (whole-lawn soil drench)",
+  "rate": "Steep 1 cup dried alfalfa pellets/meal per gallon of non-chlorinated water (optional 1 tsp unsulfured molasses) 24-48 hours, stirring every 12-24 hours; strain through mesh or burlap, pressing solids to extract all liquid. Add spent solids to the compost pile. Apply at 1 gallon per 100 sq ft.",
+  "timing": "Soil drench (primary use) or light foliar at half-strength, applied early morning or evening only - never in heat of day. Every 3 weeks during active growing season. Pause above 95F, resume once temps drop below 90F. Apply before light rain for best absorption.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "Alfalfa contains triacontanol, a natural plant growth stimulant, plus a mild N-P-K and trace mineral load - it feeds soil biology broadly rather than pushing a specific nutrient. Part of the rotating whole-lawn organic input schedule (alongside molasses, epsom salt foliar, fish bone meal tea, compost, and biochar) documented in annual-organic-lawn-care-rotation-brunswick-zone-9a. Distinct from garden-bed-scale teas used on individual perennials/shrubs.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "epsom-salt-foliar-spray",
+  "product": "Epsom Salt (magnesium sulfate) foliar spray / soil drench",
+  "rate": "1 tablespoon Epsom salt dissolved per gallon of water. Foliar spray or soil drench, roughly 1 gallon per 100 sq ft for lawn-scale use.",
+  "timing": "Apply in the evening (after 6 PM) to avoid leaf scorch in direct sun; never in direct midday sun. Regular rotation slot every 1-3 weeks alongside the other whole-lawn inputs. This is one of only two inputs (with diluted molasses) considered safe to continue during a heat wave above 95F - use evening-only during heat waves and skip other inputs.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "Supplies magnesium and sulfur, both easily leached from fast-draining sandy soils like Brunswick coastal sand. Magnesium supports chlorophyll production (helps grass hold green color under stress) without pushing the surge growth a nitrogen feed would cause during heat stress. Part of the rotating whole-lawn organic input schedule documented in annual-organic-lawn-care-rotation-brunswick-zone-9a.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

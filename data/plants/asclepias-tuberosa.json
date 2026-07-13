@@ -1,0 +1,14 @@
+{
+  "id": "asclepias-tuberosa",
+  "scientificName": "Asclepias tuberosa",
+  "commonName": "Butterfly Weed",
+  "zone": "3a-9b",
+  "bloomWindow": { "startMonth": 6, "endMonth": 8 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Tolerates poor, dry soil; taproot makes transplanting difficult once established.",
+  "companionPlants": ["echinacea-purpurea", "andropogon-gerardii"],
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

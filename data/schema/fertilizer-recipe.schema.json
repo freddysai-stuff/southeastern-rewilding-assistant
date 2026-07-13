@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "fertilizer-recipe.schema.json",
+  "title": "FertilizerRecipe",
+  "type": "object",
+  "required": ["id", "product", "rate", "timing"],
+  "properties": {
+    "id": { "type": "string" },
+    "product": { "type": "string" },
+    "rate": { "type": "string" },
+    "timing": { "type": "string" },
+    "appliesTo": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "version": { "type": "string" },
+    "updated": { "type": "string", "format": "date" }
+  }
+}

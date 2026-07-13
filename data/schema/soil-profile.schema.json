@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "soil-profile.schema.json",
+  "title": "SoilProfileTemplate",
+  "type": "object",
+  "required": ["id", "name", "phRange", "organicMatterTarget", "compaction"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "phRange": {
+      "type": "object",
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "number" },
+        "max": { "type": "number" }
+      }
+    },
+    "organicMatterTarget": { "type": "number", "description": "Target organic matter percentage" },
+    "compaction": { "type": "string", "enum": ["low", "medium", "high"] },
+    "amendments": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "string" },
+    "version": { "type": "string" },
+    "updated": { "type": "string", "format": "date" }
+  }
+}

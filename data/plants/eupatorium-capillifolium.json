@@ -1,0 +1,14 @@
+{
+  "id": "eupatorium-capillifolium",
+  "scientificName": "Eupatorium capillifolium",
+  "commonName": "Dog Fennel",
+  "zone": "6a-10b",
+  "bloomWindow": { "startMonth": 10, "endMonth": 11 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "VOLUNTEER-WEED, MANAGEABLE: a native North American perennial that self-invites into flower beds via an aggressive underground root system and will rob neighboring plants of water/nutrients if left unchecked - thin it out by pulling stalks by the base (use gloves) rather than trying to eradicate it outright, since a native perennial with real value doesn't need full removal. Positives worth keeping: fine, feathery dill-like foliage is a favorite cut-flower filler in vases with roses (crush a leaf to confirm ID - musky, non-licorice scent, unlike true fennel), and contained patches provide extra textural/wildlife cover at no cost. Pinch the top 2 in. of growing tips to force bushy, multi-branched growth for fuller cut sprays instead of one 6 ft. lanky spear. Do not fertilize it directly - keep phosphorus-heavy bloom boosters targeted at the base of desired companions only, since Dog Fennel's greedy roots will happily out-compete them for the boost. Rarely flowers until very late fall (insignificant yellowish-white clusters).",
+  "companionPlants": [],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

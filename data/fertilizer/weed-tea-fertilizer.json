@@ -1,0 +1,10 @@
+{
+  "id": "weed-tea-fertilizer",
+  "product": "Fermented Weed Tea (free general-purpose mineral fertilizer from pulled weeds)",
+  "rate": "Stuff pulled weeds (before they've set seed) into a 5-gallon bucket, fill with water, and let ferment 2-3 weeks. Strain the liquid and dilute with plain water until it looks like weak tea before applying - full strength can burn roots.",
+  "timing": "Apply to heavy-feeding vegetable or bloom-heavy ornamental plants during active growing season. Fermentation takes 2-3 weeks; brew a new batch on a rolling basis as weeds are pulled.",
+  "appliesTo": [],
+  "notes": "A genuinely free-input alternative/rotation partner to kelp-tea and fish-bone-tea recipes - nutrient content varies by whatever weeds went into the bucket (legume-heavy batches skew nitrogen-rich, taprooted-weed batches carry more mined minerals like calcium/iron). Only use weeds that have not yet flowered or set seed to avoid inadvertently spreading viable seed through splashed tea or compost runoff. Expect a strong fermentation odor - brew away from windows/patios and keep the bucket covered but not airtight.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

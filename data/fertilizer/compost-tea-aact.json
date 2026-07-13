@@ -1,0 +1,10 @@
+{
+  "id": "compost-tea-aact",
+  "product": "Compost Tea (simple steep or AACT - actively aerated compost tea)",
+  "rate": "1-2 cups finished compost in a mesh bag submerged in 1 gallon non-chlorinated water, plus 1-2 tsp unsulfured molasses to feed microbes. Simple steep: 24-36 hours, stirring every 8-12 hours. AACT: run an aquarium air pump + airstone continuously for 24-36 hours instead of stirring. Apply at 1 gallon per 100 sq ft.",
+  "timing": "Apply early morning - microbes need moisture to establish. Every 3-4 weeks, or after heavy rain events. Use immediately after brewing (within 4 hours for AACT); do not store finished tea. Never apply during heat waves above 95F.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "A liquid, fast-acting microbial inoculant distinct from compost-topdress (the dry 1/4-1/2 inch physical layer used for structure-building and moisture retention). The two are complementary: topdress twice a year (spring/fall) for organic matter and structure, brew compost tea more frequently as a liquid microbial boost between topdressings. Discard any batch that smells sulfurous/foul rather than sweet-earthy. Part of the rotating whole-lawn organic input schedule documented in annual-organic-lawn-care-rotation-brunswick-zone-9a.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

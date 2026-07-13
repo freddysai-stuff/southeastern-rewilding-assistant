@@ -1,0 +1,48 @@
+.sera-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xs);
+  border: none;
+  border-radius: var(--radius-desktop);
+  padding: var(--space-sm) var(--space-lg);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: filter 0.15s ease, transform 0.05s ease;
+}
+
+.sera-button:active {
+  transform: translateY(1px);
+}
+
+.sera-button--primary {
+  background: var(--color-primary-green);
+  color: var(--color-surface);
+}
+
+.sera-button--primary:hover {
+  filter: brightness(1.08);
+}
+
+.sera-button--secondary {
+  background: var(--color-surface);
+  color: var(--color-deep-forest-green);
+  border: 1px solid var(--color-deep-forest-green);
+}
+
+.sera-button--ghost {
+  background: transparent;
+  color: var(--color-deep-forest-green);
+}
+
+.sera-button--ghost:hover {
+  background: var(--color-cream);
+}
+
+.sera-button--icon {
+  background: transparent;
+  color: var(--color-deep-forest-green);
+  border-radius: 50%;
+  padding: var(--space-sm);
+}

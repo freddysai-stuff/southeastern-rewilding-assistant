@@ -1,0 +1,10 @@
+{
+  "id": "molasses-maintenance-drench",
+  "product": "Unsulfured Blackstrap Molasses (ongoing microbial maintenance drench)",
+  "rate": "1-2 oz unsulfured molasses per gallon of water, applied as a soil drench alone or mixed directly into an alfalfa tea brew. Roughly 1 gallon of finished mix per 100 sq ft.",
+  "timing": "Every 3-4 weeks during active growth, often combined with the alfalfa tea application day. During heat waves (95F+ for 3+ days) this is one of the few inputs safe to continue - use as a diluted 'stress drench' to help grass cope, alongside evening-only epsom salt foliar.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "This is a lower, ongoing-maintenance dose distinct from the one-time biochar-soap-molasses-soil-detox flush used to remediate chemically-sterilized soil at the start of a recovery project - see that recipe for the initial, higher-concentration detox ratio. Also distinct from fermented-rice-water-vs-molasses-soil-drench, which explains why molasses (not fermented rice water) is the practical choice for feeding soil bacteria at full-yard scale. Part of the rotating whole-lawn organic input schedule documented in annual-organic-lawn-care-rotation-brunswick-zone-9a.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

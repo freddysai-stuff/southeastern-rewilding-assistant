@@ -1,0 +1,10 @@
+{
+  "id": "biochar-maintenance-broadcast",
+  "product": "Biochar (ongoing maintenance broadcast, charged with alfalfa tea or compost)",
+  "rate": "1/4 lb biochar per sq ft, always charged (pre-soaked/mixed) with alfalfa tea or compost before applying - raw uncharged biochar can temporarily rob soil of nutrients as it adsorbs them.",
+  "timing": "A few times per year during active growing-season windows (e.g. blended into a spring broadcast, or paired with a fall compost top-dress). Never apply during a heat wave alongside compost - both are heat-wave-pause inputs. Broadcast dry biochar on a calm, windless morning (it is very lightweight and will blow into pools/drains), then lock it down immediately with the liquid charge on top.",
+  "appliesTo": ["compacted-clay-lawn", "sandy-well-drained"],
+  "notes": "This is the low-dose, ongoing maintenance application distinct from biochar-soap-molasses-soil-detox, the one-time higher-concentration remediation flush (5-10 lb/1,000 sq ft with dish soap) used to break hydrophobic, chemically-sterilized sand at the start of a lawn recovery project. Once soil biology is re-established, biochar shifts from a remediation tool to a long-term carbon/water-holding-capacity amendment applied a few times a year. Part of the rotating whole-lawn organic input schedule documented in annual-organic-lawn-care-rotation-brunswick-zone-9a.",
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

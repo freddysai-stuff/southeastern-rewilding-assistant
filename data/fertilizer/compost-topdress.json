@@ -1,0 +1,10 @@
+{
+  "id": "compost-topdress",
+  "product": "Finished compost",
+  "rate": "1/4 - 1/2 inch layer",
+  "timing": "Early spring and again in fall",
+  "appliesTo": ["compacted-clay-lawn"],
+  "notes": "Primary soil-building amendment for the Lawn & Soil Rebuilding module; improves structure and microbial activity.",
+  "version": "1.0.0",
+  "updated": "2026-07-12"
+}

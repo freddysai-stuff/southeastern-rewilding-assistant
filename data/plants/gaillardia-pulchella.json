@@ -1,0 +1,14 @@
+{
+  "id": "gaillardia-pulchella",
+  "scientificName": "Gaillardia pulchella",
+  "commonName": "Blanket Flower",
+  "zone": "3a-10b",
+  "bloomWindow": { "startMonth": 5, "endMonth": 10 },
+  "waterNeeds": "low",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "True dry-prairie native adapted to rocky, nutrient-poor ground - the opposite growing profile of tropical container companions like Cuphea or Golden Shrimp Plant, so never mix its soil recipe with theirs. Needs a deep pot (2-3 gal., 8-10 in. across) to accommodate its long central taproot, with heavy extra drainage: punch generous holes in the bottom and lower side walls of plastic containers, or use a fabric grow bag/terracotta instead. If reusing a deep bucket, build a false bottom (2 in. layer of crushed cans, bottles, or pinecones under the soil) so excess water drains away from the roots instead of pooling. Water only when the soil is bone-dry throughout, and feed sparingly - once every 6 weeks at most with a light phosphorus boost; overfeeding causes weak, floppy, 'leggy' stems in a plant genetically built for starvation. In a fabric bag mix, use soil plus perlite only (skip peat and vermiculite, which hold too much moisture for this species).",
+  "companionPlants": ["rudbeckia-hirta", "echinacea-purpurea"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

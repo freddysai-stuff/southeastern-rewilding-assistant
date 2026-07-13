@@ -1,0 +1,14 @@
+{
+  "id": "justicia-brandegeeana",
+  "scientificName": "Justicia brandegeeana",
+  "commonName": "Golden Shrimp Plant",
+  "zone": "9a-11",
+  "bloomWindow": { "startMonth": 3, "endMonth": 11 },
+  "waterNeeds": "medium",
+  "sunNeeds": "part-shade",
+  "imageRefs": [],
+  "placementGuidelines": "Tropical evergreen sub-shrub; blooms almost continuously in warm coastal GA in full sun to part shade (afternoon shade helps in peak summer heat). Not cold-hardy - must be containerized or treated as an annual outside 9b+, or dug/potted and brought indoors before first hard frost. Young single-stem nursery starts are top-heavy and root-bound fast; move up to an 8-10 in. pot (not oversized) with a rock/brick in the bottom for ballast, and plant 1 in. deeper than the nursery pot to anchor the stem. Snip the flower off right after transplanting to break apical dominance and force 2-4 bushy side-branches instead of one lanky stem. Thrives on regular feeding (responds well to phosphorus-heavy bloom boosters) since it is a heavy feeder. Multiplies readily from stem cuttings (see propagation doc) or by air-layering a bent stem directly in a wide pot. Attracts hummingbirds and butterflies.",
+  "companionPlants": ["cuphea-hyssopifolia"],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}

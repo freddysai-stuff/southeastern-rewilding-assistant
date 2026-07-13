@@ -1,0 +1,14 @@
+{
+  "id": "evolvulus-glomeratus",
+  "scientificName": "Evolvulus glomeratus",
+  "commonName": "Blue Daze",
+  "zone": "8b-11",
+  "bloomWindow": { "startMonth": 5, "endMonth": 10 },
+  "waterNeeds": "medium",
+  "sunNeeds": "full-sun",
+  "imageRefs": [],
+  "placementGuidelines": "Frequently mislabeled as 'Blue Blaze' at nurseries (that name belongs to an Agastache cultivar) - confirm by growth habit: Blue Daze is a low, sprawling, trailing mound (6-12 in. tall, 2-3 ft wide) rather than an upright clump-former. Excellent 'spiller' for large planters and hanging baskets; needs full, direct sun or the true-blue flowers will refuse to open. Likes dry, fast-draining soil similar to Mexican Petunia - a sandy 50/50 compost blend with added perlite/sand works well. In wide (14-16 in.+) planters, one plant per pot eventually fills the whole surface; two plants spaced ~5 in. apart in one pot gives instant fullness but leaves less room for harvesting plugs later. Responds well to a phosphorus-heavy bloom booster every 2 weeks for maximum flower coverage. Propagates easily - trailing stems root wherever a node touches damp soil, so plugs can be pinned down and sliced off once rooted (see propagation doc).",
+  "companionPlants": [],
+  "version": "1.0.0",
+  "updated": "2026-07-13"
+}
