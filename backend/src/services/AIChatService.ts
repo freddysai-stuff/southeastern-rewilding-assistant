@@ -21,6 +21,44 @@ material provided below. If the reference material doesn't cover the
 question, say so honestly instead of guessing. Keep answers concise and
 practical, and mention which reference docs you drew from.`;
 
+/** The project is anchored to one real location, so we can always tell the LLM "where/when" it is. */
+const PROJECT_LOCATION = 'Brunswick, GA (USDA Hardiness Zone 9a, coastal sandy soil)';
+
+const SEASON_BY_MONTH = [
+  'winter', 'winter', 'spring', 'spring', 'spring',
+  'summer', 'summer', 'summer', 'fall', 'fall', 'fall', 'winter',
+] as const;
+
+function currentDateContext(): { dateLabel: string; monthName: string; season: string } {
+  const now = new Date();
+  return {
+    dateLabel: now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }),
+    monthName: now.toLocaleString('en-US', { month: 'long' }),
+    season: SEASON_BY_MONTH[now.getMonth()],
+  };
+}
+
+/** Builds a short "where/when" header injected into every prompt, independent of retrieval results. */
+function buildContextHeader(): string {
+  const { dateLabel, monthName, season } = currentDateContext();
+  return `Current context: today is ${dateLabel} (${monthName}, ${season} in the Southeastern US). Project location: ${PROJECT_LOCATION}.`;
+}
+
+/**
+ * Vague/time-based questions ("what should I do today?") share no keywords
+ * with any Data Doc, so plain TF-IDF retrieval comes back empty even though
+ * the KB has plenty of seasonal guidance. Detect that pattern and fold in
+ * the current season/zone as extra search terms so retrieval actually finds
+ * the relevant seasonal/fertilizer-timing docs.
+ */
+const TEMPORAL_QUERY_PATTERN = /\b(today|tonight|this week(end)?|this month|right now|currently)\b/i;
+
+function buildRetrievalQuery(message: string): string {
+  if (!TEMPORAL_QUERY_PATTERN.test(message)) return message;
+  const { monthName, season } = currentDateContext();
+  return `${message} ${season} ${monthName} zone 9a seasonal schedule fertilizer timing tasks`;
+}
+
 function toSources(results: RetrievalResult[]): ChatSource[] {
   return results.map((r) => ({
     id: r.doc.id,
@@ -164,13 +202,16 @@ function buildExtractiveReply(results: RetrievalResult[]): string {
 
 class AIChatService {
   async respond(message: string, history: ChatMessage[] = []): Promise<ChatResponse> {
-    const results = retrievalService.retrieve(message, 5);
+    const results = retrievalService.retrieve(buildRetrievalQuery(message), 6);
     const sources = toSources(results);
 
     const provider = getConfiguredProvider();
     if (provider !== 'none') {
       const messages: ChatMessage[] = [
-        { role: 'system', content: `${SYSTEM_PROMPT}\n\nReference material:\n${buildContextBlock(results)}` },
+        {
+          role: 'system',
+          content: `${SYSTEM_PROMPT}\n\n${buildContextHeader()}\n\nReference material:\n${buildContextBlock(results)}`,
+        },
         ...history,
         { role: 'user', content: message },
       ];
