@@ -17,4 +17,112 @@
   padding: var(--space-sm) var(--space-md);
   font-size: 13px;
   color: var(--color-deep-forest-green);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
 }
+
+.ai-shell__suggestion:hover {
+  background: var(--color-sky-blue);
+}
+
+.ai-shell__chat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.ai-shell__messages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-height: 360px;
+  overflow-y: auto;
+  padding-right: var(--space-xs);
+}
+
+.ai-shell__message {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  max-width: 85%;
+}
+
+.ai-shell__message--user {
+  align-self: flex-end;
+  align-items: flex-end;
+}
+
+.ai-shell__message--assistant {
+  align-self: flex-start;
+  align-items: flex-start;
+}
+
+.ai-shell__bubble {
+  white-space: pre-wrap;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-card);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.ai-shell__message--user .ai-shell__bubble {
+  background: var(--color-primary-green);
+  color: #fff;
+}
+
+.ai-shell__message--assistant .ai-shell__bubble {
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+}
+
+.ai-shell__typing {
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.ai-shell__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+  font-size: 11px;
+}
+
+.ai-shell__sources-label {
+  color: var(--color-text-secondary);
+}
+
+.ai-shell__source-chip {
+  background: var(--color-sky-blue);
+  border-radius: var(--radius-mobile);
+  padding: 2px var(--space-sm);
+  color: var(--color-deep-forest-green);
+}
+
+.ai-shell__error {
+  color: var(--color-danger);
+  font-size: 12px;
+  margin: 0;
+}
+
+.ai-shell__input-row {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.ai-shell__input {
+  flex: 1;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-desktop);
+  border: 1px solid var(--color-border);
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.ai-shell__input:focus {
+  outline: 2px solid var(--color-primary-green);
+  outline-offset: 1px;
+}
+

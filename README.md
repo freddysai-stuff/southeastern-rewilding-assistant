@@ -6,8 +6,10 @@
 
 This repo currently contains the **Foundation Phase** scaffold: monorepo
 structure, design system, layout shells, component library, sample Data
-Docs, and stub backend endpoints. AI chat logic, PDF generation, a real
-database/auth, and the seasonal/harvesting rule engines are **not yet
+Docs, and stub backend endpoints — plus a first working slice of the **AI
+Chat Assistant**, grounded in the Data Docs via retrieval (see
+[AI Chat Assistant / RAG](#ai-chat-assistant--rag) below). PDF generation, a
+real database/auth, and the seasonal/harvesting rule engines are **not yet
 implemented** — see [Roadmap](#roadmap) below.
 
 ## Repo layout
@@ -71,12 +73,48 @@ rules, propagation guides, glossary) lives in `/data` as the source of
 truth, loaded by the backend's `DataDocService` at startup. See
 [`data/README.md`](data/README.md) for the contributor workflow.
 
+## AI Chat Assistant / RAG
+
+The AI Chat Assistant module (`/ai` in the frontend, `POST /api/chat` in the
+backend) uses **retrieval-augmented generation (RAG)** so its answers are
+grounded in the Data Docs instead of invented:
+
+1. `RetrievalService` flattens every Data Doc (plants, soil, fertilizer,
+   seasonal rules, propagation notes, glossary terms) into searchable text
+   and indexes it with a small, dependency-free TF-IDF + cosine-similarity
+   scorer — no external embedding API, no cost, works fully offline.
+2. `AIChatService` retrieves the top matching docs for a user's message and
+   either:
+   - **Extractive mode (default, zero cost)** — formats the top matches
+     into a direct, cited answer. This is what runs out of the box.
+   - **Generative mode** — if you set `OPENAI_API_KEY` or
+     `ANTHROPIC_API_KEY` in `backend/.env` (copy from
+     `backend/.env.example`), the retrieved docs are injected into an LLM
+     prompt for a fully conversational answer, still cited to the same
+     source docs.
+3. Every reply returns a `sources` list (doc id, category, title, relevance
+   score) so you can see exactly which Data Docs backed the answer.
+
+To upgrade to generative answers:
+
+```bash
+cp backend/.env.example backend/.env
+# then edit backend/.env and set OPENAI_API_KEY or ANTHROPIC_API_KEY
+npm run dev:backend
+```
+
+Because retrieval only reasons over what's in `/data`, adding more/better
+Data Docs (more plants, soil types, propagation notes, glossary terms) is
+the single biggest lever for making the assistant "smarter" — it doesn't
+require any code changes.
+
 ## Roadmap
 
-Planned in later phases (not yet built): AI Chat Assistant with
-retrieval-augmented context, PDF/printable generation (Puppeteer), a real
-Postgres database + auth, offline-first sync, seasonal/harvesting/soil rule
-engines, and calendar sync (iCal/Google).
+Planned in later phases (not yet built): richer AI Chat context (full
+project/plot state, conversation memory across sessions, suggested quick
+actions), PDF/printable generation (Puppeteer), a real Postgres database +
+auth, offline-first sync, seasonal/harvesting/soil rule engines, and
+calendar sync (iCal/Google).
 
 ## CI
 
